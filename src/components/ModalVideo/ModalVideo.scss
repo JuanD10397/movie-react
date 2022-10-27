@@ -1,0 +1,34 @@
+.modal-video {
+    width: 100% !important;
+    height: 100%;
+    padding: 0 !important;
+
+    .ant-modal-content {
+        height: 100%;
+        background-color: #000 !important;
+
+        //Esta es la X para cerrar el modal
+        .ant-modal-close { 
+            color: #fff;
+
+            span {
+                font-size: 40px;
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+        }
+
+        .ant-modal-body {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            // Esto significa solo el primer div dentro (los que estén dentro de ese div no)
+            > div {
+                width: 90% !important;
+                height: 90% !important;
+            }
+        }
+    }
+}
